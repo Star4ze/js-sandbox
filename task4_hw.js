@@ -66,17 +66,17 @@ console.log("-----------------------------------------")
 n = 5
 console.log("sequence of the first " + n + " number in the look-and-say")
 num = "1"
-let val = 1
+let count = 1
 ans = ""
 
 for (let i = 1; i <= n; i++) {
     for (let j = 0; j < num.length; j++) {
         if (num[j] != num[j + 1]) {
-            ans = ans + val + num[j]
-            val = 1
+            ans = ans + count + num[j]
+            count = 1
         }
         else
-            val++
+            count++
     }
     num = ans
     ans = ""
