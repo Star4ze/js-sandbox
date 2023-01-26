@@ -27,7 +27,7 @@ console.log("------------------------------")
 
 // Task4: Write a program, that detects palindromes
 console.log("program, that detects palindromes")
-let palindrome = "madam"
+let palindrome = "racecar"
 let isPalindromes = true
 let lenOfWord = palindrome.length
 for (let i = 0; i < lenOfWord / 2; i++) {
