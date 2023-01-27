@@ -16,7 +16,7 @@ function trailingZeros(num) {
     }
     return countingZeros(factRecurssion(num))
 }
-console.log(`trailing zeros of${num} is ${trailingZeros(num)}`)
+console.log(`trailing zeros of ${num} is ${trailingZeros(num)}`)
 console.log()
 
 // Create a function that takes in a number n as an argument and returns the result of raising it to a power p using recursion.

@@ -9,7 +9,7 @@ console.log(`${num1} + ${num2} = ${sum(num1, num2)}`)
 console.log()
 
 // Create a function that takes in a string as an argument and returns the number of vowels in the string using a loop.
-let string = "shaka boom"
+let string = "testing the function"
 console.log("number of vowels in a string")
 function countVowels(string) {
     let count = 0
