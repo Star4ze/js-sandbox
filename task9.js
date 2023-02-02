@@ -46,13 +46,13 @@ console.log("--------------------------")
 
 // Write a function that takes in an object and a key, and returns true if the value associated with that key is a function and false otherwise.
 console.log("returns true if the value associated with that key is a function")
-function returnsKey(key, object) {
+function isaFunction(key, object) {
     if (typeof (object[key]) == 'function')
         return true
     return false
 }
 
-console.log("true if its a function :" + returnsKey("eat", object))
+console.log("true if its a function :" + isaFunction("eat", object))
 console.log("--------------------------")
 // Write a function that takes in an object and returns a new object that only includes the key-value pairs where the key is a string of a specific length.
 console.log("returns a new object that only includes the key-value pairs where the key is a string of a specific length.")
@@ -74,7 +74,12 @@ console.log("--------------------------")
 // Write a function that takes in an object and a key, and returns the number of characters in the value of that key.
 console.log("returns the number of characters in the value of that key.")
 function numOfCharactersKey(key, object) {
-    return object[key].length
+    if (object[key] == null) {
+        return "no value"
+    }
+    else {
+        return object[key].length
+    }
 }
 
 console.log("number of characters in the value of that key " + numOfCharactersKey("name", object))
@@ -93,9 +98,5 @@ function deleteKey(delKey, object) {
     return newobject
 }
 
-console.log("delete "+toDelete+ 'results =>')
-console.log(deleteKey(toDelete,object))
-// Hard tasks
-// Write a function that takes in an object and returns a new object with all its values as functions that when called, return the original value.
-// Write a function that takes in an object, and returns a new object with all its key-value pairs sorted by the length of the keys.
-// Write a function that takes in an object and a key, and returns the value of that key. If the key does not exist, the function should return the value of the nearest key in alphabetical order.
+console.log("delete " + toDelete + 'results =>')
+console.log(deleteKey(toDelete, object))

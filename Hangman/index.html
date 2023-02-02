@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Hangman</title>
+</head>
+
+<body>
+    <h1>Hangman</h1>
+    <div class="start">
+        <form id="startingForm">
+            <label> Enter Word</label>
+            <input type="text" id="startingForm-text-input">
+            <br>
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+
+    <div class="game">
+        <div class="answerDiv"></div>
+        <form id="answerForm">
+            <input type="text" name="answer" id="answer">
+            <label> Remaining Chances</label>
+            <label id="chances"></label>
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+
+    <div class="gameOver">
+        <form action="">
+            <h2 id="overTitle"></h2>
+            <input type="submit" value="Restart">
+        </form>
+    </div>
+
+</body>
+
+</html>
